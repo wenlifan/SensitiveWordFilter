@@ -1,4 +1,8 @@
-local LibTableFormat = require "table_format"
+--[[
+    Author: zlf
+    Date: 2021.11.08
+    Note: 字符串的敏感词过滤
+]]
 local LibBuildTrie = require "build_trie"
 
 local StringSearch = {}
@@ -17,14 +21,4 @@ function StringSearch:new(tbShieldLib)
     return tbLibNew
 end
 
-
---[[
-local l_FindClass = StringSearch:new({"张三", "李四", "zlf"})
-
-local sMainStr = "张三hhhhzlf李四zzzz"
-
-local tbResults = l_FindClass:find_all(sMainStr)
-print("3333333333333333333 ", LibTableFormat(tbResults))
-local sMainStr = l_FindClass:replace(tbResults, sMainStr)
-print("3333333333333333333 ", sMainStr)
-]]
+return StringSearch

@@ -274,15 +274,4 @@ function TrieSearch:new()
     return TbNew
 end
 
---[[
-local l_FindClass = TrieSearch:new()
-l_FindClass:set_key_words({"张三", "李四", "zlf"})
-
-local sMainStr = "张三hhhhzlf李四zzzz"
--- local sResults = l_FindClass:find_first(sMainStr)
-
-local tbResults = l_FindClass:find_all(sMainStr)
-print("3333333333333333333 ", sMainStr)
-]]
-
 return TrieSearch
