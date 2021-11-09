@@ -36,5 +36,9 @@ LibSpellingSearch:get_pin_yin_in_list_for_name("单一一", 0)
 
 ### 测试代码运行
 ```
-lua5.3 test/test.lua 
+ubuntu@VM-0-9-ubuntu:~/SensitiveFilter$ lua5.3 test/test.lua 
+ 构建trie树消耗时间     5.064671
+ 构建trie树消耗的内存   221.47020339966 M
+ 匹配主串的数量         23359
+ 敏感词过滤消耗的时间:  1.534258
 ```
