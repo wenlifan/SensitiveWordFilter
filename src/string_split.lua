@@ -37,7 +37,7 @@ local function utf8_to_unicode(tbUTF8Array)
             return tbResults
         end
         tbResults[1] = (bB1 << 6) + (bB2 & 0x3F)
-        tbResults[2] = (bb1 >> 2) & 0x07
+        tbResults[2] = (bB1 >> 2) & 0x07
 
         return tbResults
     elseif nLen == 3 then
