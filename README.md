@@ -33,3 +33,8 @@ LibSpellingSearch:get_all_pin_yin("传", 0)
 LibSpellingSearch:get_pin_yin_in_list_for_name("欧阳一一", 0)
 LibSpellingSearch:get_pin_yin_in_list_for_name("单一一", 0)
 ```
+
+### 测试代码运行
+```
+lua5.3 test/test.lua 
+```
